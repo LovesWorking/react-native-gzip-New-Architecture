@@ -1,7 +1,7 @@
 {
-  "name": "react-native-gzip",
+  "name": "react-native-gzip-new-architecture",
   "version": "1.0.0",
-  "description": "Fast gzip to compress strings for android & ios in React Native",
+  "description": "Fast gzip to compress strings for android & ios in React Native with New Architecture support",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -31,9 +31,9 @@
     "typescript": "tsc --noEmit",
     "prepare": "bob build",
     "release": "release-it",
-    "example": "yarn --cwd example",
+    "example": "pnpm --filter example",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build",
-    "bootstrap": "yarn example && yarn install && yarn example pods"
+    "bootstrap": "pnpm install && cd example && pnpm install"
   },
   "keywords": [
     "react-native",
@@ -41,17 +41,21 @@
     "android",
     "gzip",
     "compress",
-    "decompress"
+    "decompress",
+    "new-architecture",
+    "fabric",
+    "turbo-modules"
   ],
-  "repository": "https://github.com/ammarahm-ed/react-native-gzip",
-  "author": "ammarahm-ed <ammarahmed6506@gmail.com> (https://github.com/ammarahm-ed)",
+  "repository": "https://github.com/LovesWorking/react-native-gzip-New-Architecture",
+  "author": "LovesWorking (https://github.com/LovesWorking)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ammarahm-ed/react-native-gzip/issues"
+    "url": "https://github.com/LovesWorking/react-native-gzip-New-Architecture/issues"
   },
-  "homepage": "https://github.com/ammarahm-ed/react-native-gzip#readme",
+  "homepage": "https://github.com/LovesWorking/react-native-gzip-New-Architecture#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
@@ -149,5 +153,6 @@
         }
       ]
     ]
-  }
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }
