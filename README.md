@@ -2,6 +2,9 @@
 
 Fast gzip to compress strings for android & ios in React Native with New Architecture (Fabric & TurboModules) support.
 
+### Thanks to lorenc-tomasz https://github.com/ammarahm-ed/react-native-gzip/issues/4#issuecomment-2624546187
+
+
 This is a fork of [react-native-gzip](https://github.com/ammarahm-ed/react-native-gzip) that has been updated to support React Native's New Architecture.
 
 ## Features
