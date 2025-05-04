@@ -1,6 +1,6 @@
 {
   "name": "react-native-gzip-new-architecture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast gzip to compress strings for android & ios in React Native with New Architecture support",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
